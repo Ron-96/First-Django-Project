@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Centered Container Example</title>
+  <style>
+    body {
+        background-image: url("https://i.scdn.co/image/ab67616d0000b27358a0081193e46ba5193490ae") ;
+      background-repeat: inherit;
+      background-size: 5cm;
+        display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    
+    }
+    
+    .container {
+      width: 400px;
+      
+      background-color: rgba(255, 255, 255, 0.8); /* Adjust the alpha value to control the blur intensity */
+      backdrop-filter: blur(8px); /* Adjust the blur radius as desired */
+      
+      text-align: center;
+      padding: 20px;}
+    
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    
+    .description {
+      font-size: 16px;
+      margin-top: 10px;
+    }
+    
+    .button {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Typical You</h1>
+    <p class="description">""Typical You" is a heartfelt and introspective song that explores the patterns and dynamics of a tumultuous relationship. With its poignant lyrics and emotive melodies, the song delves into the complexities of love and the frustrations that arise when faced with recurring behaviors and predictable outcomes.
+
+      The lyrics of "Typical You" paint a vivid picture of a relationship marked by repetition and familiarity. The protagonist reflects on the cyclical nature of their interactions with a particular person, highlighting the predictable patterns and actions that have become synonymous with this individual. The song captures the simultaneous feelings of both comfort and frustration that arise from being entangled in such a relationship.
+      
+      Musically, "Typical You" strikes a balance between melancholic and melodic tones. The instrumentation weaves a tapestry of bittersweet melodies, conveying the emotional depth and vulnerability of the protagonist's experiences. The song's arrangement further enhances the introspective nature of the lyrics, allowing listeners to empathize with the complexities of navigating a relationship that feels trapped in repetitive cycles.
+      
+      "Typical You" invites listeners to reflect on their own experiences of love and relationships, prompting introspection on the patterns and dynamics that often emerge. It serves as a reminder that while familiarity can bring comfort, it's essential to recognize and address the recurring patterns that may hinder personal growth and happiness.
+      
+      Overall, "Typical You" is a soulful and relatable song that explores the universal themes of love, repetition, and self-discovery. It resonates with listeners who have experienced the rollercoaster of emotions that comes with being entangled in a relationship marked by predictable behaviors and outcomes.</p>
+    <button class="button" onclick="goBack()">Go back</button>
+  </div>
+
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+</body>
+</html>

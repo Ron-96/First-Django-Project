@@ -1,0 +1,18 @@
+<style>
+    .post-title,
+    .post-date,
+    .post-body {
+        color: rgb(252, 8, 208);
+    }
+    .container p {color: rgb(252, 8, 208);}
+  </style>
+
+{% extends "header.html" %}
+
+{% block content %}
+  <h3 class="post-title">{{ post.title }}</h3>
+  <h6 class="post-date">Posted on {{ post.date }}</h6>
+  <div class="container">
+    <p class="post-body">{{ post.body|safe|linebreaks }}</p>
+  </div>
+{% endblock %}

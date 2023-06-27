@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Suggestion List</title>
+  <style>
+    body {
+      background-color: black !important;
+
+      background-repeat: initial;
+      background-size: 5cm;
+      margin-left: 2cm;
+
+    }
+
+    .suggestion-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: left;
+    }
+
+    .suggestion {
+      width: 200px;
+      margin-bottom: 20px;
+      margin-left: 30px;
+
+    }
+
+    h1 {
+      color: rgb(252, 8, 208);
+      font: bold;
+      font-style: italic;
+      font-size: 400%;
+    }
+
+    h3 {
+      color: rgb(252, 8, 208);
+      font: bold;
+      font-size: 250%;
+    }
+
+
+    p {
+      color: rgb(252, 8, 208);
+      font: bold;
+      font-size: 250%;
+    }
+
+    a {
+      color: rgb(252, 8, 208);
+      font: bold;
+      font-size: 150%;
+    }
+
+    .container {
+      position: relative;
+    }
+
+    .return-button {
+      position: absolute;
+      top: 55px;
+      right: 150px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Album Title Suggestions</h1>
+  <div class="suggestion-container">
+    {% for suggestion in suggestions|dictsortreversed:"votes" %}
+    <div class="suggestion">
+      <h3>{{ suggestion.title }}</h3>
+      <p>Votes: {{ suggestion.votes }}</p>
+      <form action="{% url 'alex:vote' suggestion.id %}" method="post">
+        {% csrf_token %}
+        <button type="submit">Vote</button>
+      </form>
+    </div>
+    {% endfor %}
+    <a href="{% url 'alex:WebTest' %}" class="return-button">Go back to Home</a>
+  </div>
+</body>
+
+</body>
+
+</html>

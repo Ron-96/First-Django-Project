@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Centered Container Example</title>
+  <style>
+    body {
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlsu9imlNj7jtR6DpA4yhVM4ZlDuO_DH9DCQ&usqp=CAU") ;
+      background-repeat: inherit;
+      background-size: 5cm;
+        display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    
+    }
+    
+    .container {
+      width: 400px;
+      
+      background-color: rgba(255, 255, 255, 0.8); /* Adjust the alpha value to control the blur intensity */
+      backdrop-filter: blur(8px); /* Adjust the blur radius as desired */
+      
+      text-align: center;
+      padding: 20px;}
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    
+    .description {
+      font-size: 16px;
+      margin-top: 10px;
+    }
+    
+    .button {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Ex-Girl Friend</h1>
+    <p class="description">"Ex Girlfriend" is a heartfelt and introspective song that delves into the complexities of a past romantic relationship. With its poignant lyrics and emotional melodies, the song explores the lingering feelings and memories associated with a significant other who has now become an ex.
+
+      The lyrics of "Ex Girlfriend" navigate the emotional landscape of reminiscing about a lost love. The protagonist reflects on the ups and downs of the relationship, reminiscing about the shared experiences, and contemplating the reasons for its ultimate demise. The song captures the mix of nostalgia, longing, and perhaps even a touch of regret that often accompanies the end of a romantic partnership.
+      
+      Musically, "Ex Girlfriend" evokes a sense of bittersweet melancholy. The instrumentation, accompanied by soulful vocals, carries an emotional weight that resonates with the listener. The song's arrangement emphasizes the introspective nature of the lyrics, allowing listeners to connect with the protagonist's journey of reflection and healing.
+      
+      "Ex Girlfriend" invites listeners to delve into their own experiences of love and loss, eliciting empathy and understanding. It serves as a reminder of the impact past relationships can have on our lives and the lingering emotions that can remain even after parting ways.
+      
+      Overall, "Ex Girlfriend" is a tender and relatable song that explores the complexities of romantic relationships. It captures the emotions and memories tied to a significant other who has transitioned from a lover to an ex, inviting listeners to reflect on their own experiences of love, heartbreak, and personal growth.</p>
+    <button class="button" onclick="goBack()">Go back</button>
+  </div>
+
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+</body>
+</html>
